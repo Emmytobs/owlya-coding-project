@@ -3,7 +3,7 @@ import { FormBuilder } from "@angular/forms";
 import { Store } from "@ngrx/store";
 import { AppState } from "src/shared/store";
 import { IComment } from "src/shared/store/post/post.model";
-import * as POST_ACTIONS from "../../shared/store/post/post.actions"
+import * as POST_ACTIONS from "../../../../shared/store/post/post.actions"
 
 @Component({
     selector: 'app-comment-form',

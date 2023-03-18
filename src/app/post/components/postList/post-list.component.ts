@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Store } from "@ngrx/store"
 import { AppState } from 'src/shared/store/';
-import { PostService } from './post-list.service';
+import { PostService } from '../../services/post.service';
 import * as POST_ACTIONS from 'src/shared/store/post/post.actions';
 import { IPost } from 'src/shared/store/post/post.model';
 

@@ -6,11 +6,11 @@ import { StoreModule } from "@ngrx/store"
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PostListComponent } from './postList/post-list.component';
-import { PostService } from './postList/post-list.service';
-import { PostDetailsComponent } from './postDetails/post-details.component';
+import { PostListComponent } from './post/components/postList/post-list.component';
+import { PostService } from './post/services/post.service';
+import { PostDetailsComponent } from './post/components/postDetails/post-details.component';
 import { postReducer } from 'src/shared/store/post/post.reducer';
-import { CommentFormComponent } from './commentForm/comment-form.component';
+import { CommentFormComponent } from './comment/components/commentForm/comment-form.component';
 
 @NgModule({
   declarations: [
