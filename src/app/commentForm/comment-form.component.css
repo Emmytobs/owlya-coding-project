@@ -1,0 +1,36 @@
+.comment-input {
+    display:  block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #e0dfdf;
+    padding: 10px;
+    outline: none;
+}
+.comment-input:focus {
+    border-bottom: 1px solid #000;
+}
+.comment-btn {
+    margin-top: 20px;
+    background: #fff;
+    /* color: #e0dfdf; */
+    border-width: 0px;
+    border: 1px solid #e0dfdf;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    transition: top .2s ease;
+}
+
+.comment-btn:not(.comment-btn-disabled):hover {
+    cursor: pointer;
+    color: #000;
+    border-color: #000;
+    top: -3px;
+}
+
+.comment-btn-disabled {
+    cursor: not-allowed;
+    color: #e0dfdf;
+}

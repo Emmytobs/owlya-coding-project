@@ -1,0 +1,31 @@
+.component-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 20px 40px;
+}
+
+.post-body {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3; /* start showing ellipsis when 3rd line is reached */
+    white-space: pre-wrap;
+}
+
+.post-container {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    transition-property: top, box-shadow; 
+    transition-duration: .15s;
+    transition-timing-function: ease-in;
+    position: relative;
+    top: 0;
+    cursor: pointer;
+    box-shadow: 2.5px 1.5px 1.5px #cccccc78;
+}
+.post-container:hover {
+    top: -5px;
+    box-shadow: 4px 5px 5px #ccc;
+}

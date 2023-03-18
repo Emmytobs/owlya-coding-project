@@ -1,0 +1,34 @@
+<div class="post-details-container" *ngIf="post | async as post">
+    <a
+        routerLink="/posts"
+    >
+        ⬅️ View all posts
+    </a>
+    <div>
+        <h2 class="post-details-title">{{ post.title }}</h2>
+        <p class="post-details-body">{{ post.body }}</p>
+    </div>
+    <div *ngIf="post.comments.length; else noComments">
+        <div>
+            <div class="horizontal-bar"></div>
+            <h2>Comments</h2>
+            <div 
+                class="comment-container"
+                *ngFor="let comment of post.comments"
+            >
+                <p class="comment-body">{{ comment.body }}</p>
+            </div>
+        </div>
+        <div class="horizontal-bar"></div>
+        <div>
+            <h2>Add a comment</h2>
+            <app-comment-form [postId]="post.id"></app-comment-form>
+        </div>
+    </div>
+    <ng-template #noComments>
+        <div>
+            <h2>Be the first to comment!</h2>
+            <app-comment-form [postId]="post.id"></app-comment-form>
+        </div>
+    </ng-template>
+</div>

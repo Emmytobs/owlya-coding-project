@@ -1,0 +1,4 @@
+<form [formGroup]="addCommentForm" (ngSubmit)="addComment()" >
+    <input type="text" formControlName="comment" placeholder="Type something..." class="comment-input">
+    <button class="comment-btn" type="submit" [ngClass]="{'comment-btn-disabled': !addCommentForm.value.comment}">Submit</button>
+</form>
