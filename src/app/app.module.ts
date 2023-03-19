@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-import { ReactiveFormsModule } from "@angular/forms"
+import { ReactiveFormsModule, FormsModule } from "@angular/forms"
 import { BrowserModule } from '@angular/platform-browser';
 import { StoreModule } from "@ngrx/store"
 
@@ -22,6 +22,7 @@ import { CommentFormComponent } from './comment/components/commentForm/comment-f
   imports: [
     BrowserModule,
     ReactiveFormsModule,
+    FormsModule,
     AppRoutingModule,
     HttpClientModule,
     StoreModule.forRoot({ posts: postReducer }),

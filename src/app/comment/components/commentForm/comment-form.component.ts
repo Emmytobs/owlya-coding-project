@@ -10,8 +10,11 @@ import * as POST_ACTIONS from "../../../../shared/store/post/post.actions"
     templateUrl: './comment-form.component.html',
     styleUrls: ['./comment-form.component.css']
 })
+
+// type InputTypes = "comment" | "search"
 export class CommentFormComponent {
     @Input() postId = ""
+    // @Input() inputType: InputTypes = "comment"
 
     addCommentForm = this.formBuilder.group({
         comment: ""

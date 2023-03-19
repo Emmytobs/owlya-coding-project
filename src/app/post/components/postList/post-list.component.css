@@ -29,3 +29,18 @@
     top: -5px;
     box-shadow: 4px 5px 5px #ccc;
 }
+
+.search-container {
+    margin-bottom: 40px;
+}
+.search-input {
+    display:  block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #e0dfdf;
+    padding: 10px;
+    outline: none;
+}
+.search-input:focus {
+    border-bottom: 1px solid #000;
+}
