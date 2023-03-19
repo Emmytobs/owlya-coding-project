@@ -10,7 +10,7 @@
 </div>
 <div class="component-container">
     <div 
-        *ngFor="let post of filteredPosts | async"
+        *ngFor="let post of posts | async"
         routerLink="/posts/{{post.id}}"
         class="post-container"
     >
