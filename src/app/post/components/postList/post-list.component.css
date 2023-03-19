@@ -5,6 +5,13 @@
     grid-gap: 20px 40px;
 }
 
+@media screen and (max-width: 700px) {
+    .component-container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px 0px;
+    }
+}
+
 .post-body {
     overflow: hidden;
     display: -webkit-box;
@@ -32,6 +39,7 @@
 
 .search-container {
     margin-bottom: 40px;
+    width: 100%;
 }
 .search-input {
     display:  block;

@@ -3,3 +3,15 @@
     margin: 30px auto;
     max-width: 1024px;
 }
+
+@media screen and (max-width: 1000px) {
+    .app-container {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .app-container {
+        width: 90%;
+    }
+}
