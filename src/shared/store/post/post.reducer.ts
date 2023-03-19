@@ -28,7 +28,6 @@ export const postReducer = createReducer(
     defaultState,
     on(POST_ACTIONS.addComment, addCommentHandler),
     on(POST_ACTIONS.setPosts, (state, { posts }) =>  {
-        console.log("posts from reducer", posts)
         return [ ...posts ]
     }),
     on(POST_ACTIONS.filterPosts, (state, { filter }) => {
