@@ -14,9 +14,9 @@
         routerLink="/posts/{{post.id}}"
         class="post-container"
     >
-        <h3>{{ post.title }}</h3>
+        <h3 class="post-title">{{ post.title }}</h3>
         <p class="post-body">{{ post.body }}</p>
-        <small>
+        <small class="comment-count">
             <span *ngIf="post.comments.length === 0">No comment</span>
             <span *ngIf="post.comments.length === 1">1 comment</span>
             <span *ngIf="post.comments.length > 1">{{ post.comments.length }} comments</span>

@@ -12,6 +12,10 @@
     }
 }
 
+.post-title {
+    font-family: "Noto Serif", serif;
+}
+
 .post-body {
     overflow: hidden;
     display: -webkit-box;
